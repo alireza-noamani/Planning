@@ -94,7 +94,7 @@ if (stopped_secs >= _req_stop_time && tl_state.compare("Red") != 0) {
 - Furthermore, the number of points used to discretize the spiral was set. Note, deciding the resolution of descritization can have a major effect on checking for collisions and visualization. Using too many points leads to a high computation penalty and the visualization will be terribly slow. On the other hand using too few points may lead to missing potential collisions. In addition, using too few points will lead to teleport large distances making it visually not natural. We set the number of points:
 
 ```
-#define P_NUM_POINTS_IN_SPIRAL 10  
+#define P_NUM_POINTS_IN_SPIRAL 25  
 ```
 
 ### motion_planner.cpp
